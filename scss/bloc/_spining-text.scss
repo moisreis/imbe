@@ -3,7 +3,7 @@
     border-radius: border-radius("full");
 
     & > svg {
-        width: spacing("8-extra-large");
+        width: spacing("10-extra-large");
 
         @include media("visible-on-mobile") {
             width: spacing("8-extra-large");

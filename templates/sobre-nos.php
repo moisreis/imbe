@@ -10,35 +10,31 @@
 get_header(); ?>
 <main>
     <!-- BELOW IS `spining-text` container -->
-    <section id="spinner-container" class="grid--2 padding-x--4-extra-large padding-y--4-extra-large">
+    <section id="spinner-container" class="flex flex-column flex-column--center gap--extra-large width--full padding-x--4-extra-large padding-y--4-extra-large">
         <div class="flex flex-column flex-column--center width--full">
-            <p class="paragraph"><?php echo wp_kses_post(get_field('secao_inicial', 'option')['texto']); ?></p>
+            <div class="paragraph text-align--center width--half"><?php echo wp_kses_post(get_field('secao_inicial', 'option')['texto']); ?></div>
         </div>
-        <div class="flex flex-column flex-column--center width--full">
-            <a href="/" class="spining-text">
-                <?php
-                echo file_get_contents(get_template_directory() . '/assets/icons/spining-text.svg');
-                ?>
-                <div class="">
-                    <?php
-                    // echo file_get_contents(get_template_directory() . '/assets/icons/move-up-right.svg');
-                    ?>
-                </div>
-            </a>
-        </div>
+        <button class="button button--primary">Fale conosco</button>
     </section>
     <!-- BELOWS IS members -->
-    <section id="members" class="grid--2 border--y padding-x--4-extra-large padding-y--4-extra-large">
+    <section id="members" class="flex flex-column flex-column--start padding-y--4-extra-large gap--extra-large">
         <?php
         if (have_rows('lista_de_membros', 'option')):
+            $index = 0;
             while (have_rows('lista_de_membros', 'option')) : the_row();
+                $additional_class = ($index == 1) ? 'hero--invert hero--left' : '';
         ?>
-                <div class="flex flex-column flex-column--center gap--medium width--half align--start margin--auto">
-                    <img class="size--8-extra-large" src="<?php echo esc_url(get_sub_field('foto_de_perfil')['url']); ?>" alt="">
-                    <h2 class="subtitle"><?php echo esc_html(get_sub_field('nome')); ?></h2>
-                    <div class="paragraph"><?php echo wp_kses_post(get_sub_field('texto')); ?></div>
-                </div>
+                <section class="hero <?php echo $additional_class; ?>">
+                    <div class="hero-cover">
+                        <img src="<?php echo esc_url(get_sub_field('foto_de_perfil')['url']); ?>" alt="<?php echo esc_html(get_sub_field('nome')); ?>">
+                    </div>
+                    <div class="hero-content">
+                        <div class="title"><?php echo esc_html(get_sub_field('nome')); ?></div>
+                        <div class="paragraph"><?php echo wp_kses_post(get_sub_field('texto')); ?></div>
+                    </div>
+                </section>
         <?php
+                $index++;
             endwhile;
         endif;
         ?>
