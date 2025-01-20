@@ -1,0 +1,36 @@
+.icon-and-blob {
+    position: relative;
+
+    & > div {
+        @include is-absolutely-centered;
+        z-index: 10;
+
+        & > svg {
+            width: 200%;
+            height: 200%;
+            max-height: 200%;
+            max-width: 200%;
+
+            & > path {
+                fill: color("neutral", "accent");
+            }
+        }
+    }
+
+    & > svg {
+        position: relative;
+        width: fit-content;
+        height: spacing("6-extra-large");
+        z-index: 20;
+
+        & > g {
+            & > path {
+                fill: color("brand", "tertiary", "main");
+            }
+
+            & > g {
+                fill: color("brand", "primary", "main");
+            }
+        }
+    }
+}

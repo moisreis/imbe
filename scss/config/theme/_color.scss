@@ -1,0 +1,32 @@
+@use 'sass:color';
+
+$base: #f4ebe4;
+$primary: #9b4b3c;
+$secondary: #394f6b;
+$tertiary: #b8860b;
+
+$color: (
+    brand: (
+        primary: (
+            main: color.scale($primary),
+            light: color.scale($primary, $lightness: 90%),
+        ),
+        secondary: (
+            main: color.adjust($secondary),
+            light: color.adjust($secondary, $lightness: 90%),
+        ),
+        tertiary: (
+            main: color.adjust($tertiary),
+            light: color.adjust($tertiary, $lightness: 90%),
+        ),
+    ),
+    text: (
+        foreground: color.scale($base, $lightness: -90%),
+        muted: color.scale($base, $lightness: -70%),
+    ),
+    neutral: (
+        background: color.scale($base, $lightness: 60%),
+        border: color.scale($base, $lightness: -7.5%),
+        accent: color.scale($base, $lightness: -0.75%),
+    )
+)

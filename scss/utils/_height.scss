@@ -1,0 +1,5 @@
+@each $key, $value in $spacing {
+  .height--#{$key} {
+    height: $value;
+  }
+}

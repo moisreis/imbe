@@ -1,0 +1,67 @@
+form {
+    background-color: color("neutral", "accent");
+    padding: spacing("4-extra-large");
+
+    @include media("visible-on-mobile") {
+        padding: spacing("large");
+    }
+
+    min-width: 100%;
+    margin: auto;
+    @include flex-column--start;
+    gap: spacing("medium");
+
+    & > p {
+        width: 70%;
+
+        @include media("visible-on-mobile") {
+            width: 100%;
+        }
+
+        & > label {
+            width: 70%;
+
+            @include media("visible-on-mobile") {
+                width: 100%;
+            }
+
+            font-size: font-size("small");
+            color: color("text", "foreground");
+            text-transform: uppercase;
+            font-weight: font-weight("medium");
+            font-family: font-family("sans");
+        }
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    @include flex-row--center;
+    padding: spacing("regular");
+    background-color: transparent;
+    font-size: font-size("small");
+    color: color("text", "foreground");
+    text-transform: uppercase;
+    font-weight: font-weight("medium");
+    font-family: font-family("sans");
+    border: none;
+    @include border--bottom;
+    @include transition;
+    resize: none;
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+        @include outline;
+    }
+
+    &:not(:placeholder-shown) {
+        @include outline;
+    }
+
+    &:not(:valid) {
+        @include outline;
+        outline-color: red;
+    }
+}

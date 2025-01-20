@@ -1,0 +1,63 @@
+.wp-block-image,
+.wp-block-cover {
+    margin-top: spacing("medium");
+    width: 100%;
+
+    & > img {
+        width: 100%;
+        height: 70vh;
+        aspect-ratio: 1;
+        left: 0;
+    }
+}
+
+.wp-element-caption,
+.wp-block-cover__inner-container > p {
+    font-size: font-size("small");
+    font-weight: font-weight("regular");
+    text-transform: uppercase;
+    text-align: left;
+    color: color("text", "muted");
+    margin-top: spacing("extra-small");
+}
+
+.wp-block-quote, .wp-block-pullquote {
+    padding: spacing("2-extra-large") spacing("2-extra-large");
+    background-color: color("neutral", "accent");
+}
+
+.wp-block-list {
+    @include flex-column--start;
+    gap: spacing("regular");
+    align-items: start;
+    padding: spacing("2-extra-large") spacing("2-extra-large");
+    @include border;
+
+    & > li {
+        font-size: font-size("large");
+        line-height: line-height("title");
+
+        &::marker {
+            color: transparent !important;
+        }
+    }
+}
+
+.wp-block-gallery {
+    @include grid--2;
+    gap: spacing("regular");
+    margin-bottom: spacing("medium");
+
+    & > .wp-block-image {
+        margin: 0 !important;
+    }
+}
+
+.wp-block-verse {
+    font-family: font-family("serif");
+    font-size: font-size("extra-large");
+    font-style: italic;
+    color: color("text", "muted");
+    line-height: line-height("title");
+    margin: spacing("medium") 0;
+}

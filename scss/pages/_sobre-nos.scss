@@ -1,0 +1,13 @@
+#spinner-container {
+    @include media("visible-on-mobile") {
+        padding: spacing("large");
+        gap: spacing("large");
+    }
+}
+
+#members {
+    @include media("visible-on-mobile") {
+        padding: spacing("large");
+        gap: spacing("2-extra-large");
+    }
+}

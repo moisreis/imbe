@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    padding: spacing("medium") spacing("2-extra-large");
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include blur--background;
+    z-index: 9999;
+
+    & > div {
+        @include flex-row--between;
+    }
+}

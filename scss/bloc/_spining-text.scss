@@ -1,0 +1,23 @@
+.spining-text {
+    position: relative;
+    border-radius: border-radius("full");
+
+    & > svg {
+        width: spacing("8-extra-large");
+
+        @include media("visible-on-mobile") {
+            width: spacing("8-extra-large");
+        }
+        background-color: color("brand", "primary", "main");
+        border-radius: border-radius("full");
+
+        & > text > textPath {
+            stroke: color("neutral", "background");
+            stroke-width: 0.3;
+            text-transform: uppercase;
+            font-size: font-size("3-extra-small");
+            font-weight: font-weight("light");
+            letter-spacing: 1px;
+        }
+    }
+}

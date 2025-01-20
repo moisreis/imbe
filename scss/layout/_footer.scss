@@ -1,0 +1,51 @@
+footer {
+    background-color: color("brand", "primary", "main");
+    width: 95vw;
+
+    @include media("visible-on-mobile") {
+        width: 90vw;
+    }
+
+    margin: auto;
+    @include flex-column--start;
+    gap: spacing("medium");
+    padding: spacing("4-extra-large");
+    margin-top: spacing("large");
+
+    & > div {
+        @include flex-row--center;
+        gap: spacing("medium");
+        flex-wrap: wrap;
+
+        @include media("visible-on-mobile") {
+            gap: spacing("small");
+        }
+
+        & > a {
+            @include media("visible-on-mobile") {
+                width: fit-content;
+            }
+        }
+    }
+
+    & > div > p {
+        color: color("brand", "primary", "light");
+        font-size: font-size("small");
+    }
+}
+
+#copyright {
+    margin: spacing("medium") auto;
+    width: 95vw;
+
+    @include media("visible-on-mobile") {
+        width: 90vw;
+    }
+
+    @include flex-row--center;
+
+    & > p {
+        color: color("neutral", "foreground");
+        font-size: font-size("small");
+    }
+}

@@ -1,0 +1,20 @@
+@mixin transition {
+    /* @mixin transition */
+    transition: all 0.15s ease-in-out;
+}
+
+@mixin outline {
+    /* @mixin outline */
+    outline: 1px solid color("brand", "primary", "main");
+    outline-offset: spacing("3-extra-small");
+}
+
+@mixin pressed-down {
+    /* @mixin pressed-down */
+    transform: translateY(1px);
+}
+
+@mixin opacity {
+    /* @mixin opacity */
+    opacity: 0.9;
+}

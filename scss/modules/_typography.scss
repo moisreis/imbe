@@ -1,0 +1,43 @@
+.title {
+    font-family: font-family("serif");
+    font-size: font-size("8-extra-large") !important;
+    font-weight: font-weight("light");
+    color: color("text", "foreground");
+    line-height: line-height("title");
+    text-transform: none;
+
+    @include media("visible-on-mobile") {
+        font-size: font-size("6-extra-large") !important;
+    }
+
+    & > * {
+        font-family: font-family("serif");
+        font-size: font-size("8-extra-large") !important;
+        font-weight: font-weight("light");
+        color: color("text", "foreground");
+        line-height: line-height("title");
+        text-transform: none;
+
+        @include media("visible-on-mobile") {
+            font-size: font-size("6-extra-large") !important;
+        }
+    }
+}
+
+.subtitle {
+    font-family: font-family("sans");
+    font-size: font-size("extra-large");
+    font-weight: font-weight("medium");
+    color: color("text", "muted");
+    line-height: line-height("body");
+    text-transform: capitalize;
+}
+
+.paragraph {
+    font-family: font-family("sans");
+    font-weight: font-weight("regular");
+    font-size: font-size("large");
+    color: color("text", "muted");
+    line-height: line-height("title");
+    text-transform: none;
+}

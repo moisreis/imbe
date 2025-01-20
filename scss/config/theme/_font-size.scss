@@ -1,0 +1,30 @@
+$base: 0.7025rem;
+
+$multipliers: (
+    "3-extra-small": 0.5,
+    "2-extra-small": 0.75,
+    "extra-small": 1,
+    "small": 1.15,
+    "medium": 1.35,
+    "large": 1.5,
+    "extra-large": 1.65,
+    "2-extra-large": 2,
+    "3-extra-large": 2.35,
+    "4-extra-large": 2.65,
+    "5-extra-large": 3,
+    "6-extra-large": 3.5,
+    "7-extra-large": 4,
+    "8-extra-large": 4.85,
+    "9-extra-large": 5.35,
+    "10-extra-large": 5.65,
+    "11-extra-large": 6.35,
+    "12-extra-large": 7,
+    "13-extra-large": 7.75,
+);
+
+$font-size: ();
+
+@each $key, $multiplier in $multipliers {
+    $value: $base * $multiplier;
+    $font-size: map-merge($font-size, ($key: $value));
+}

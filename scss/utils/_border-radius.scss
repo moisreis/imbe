@@ -1,0 +1,39 @@
+.border-radius--base {
+    border-radius: border-radius("base");
+
+    &--top-left {
+        border-top-left-radius: border-radius("base");
+    }
+
+    &--top-right {
+        border-top-right-radius: border-radius("base");
+    }
+
+    &--bottom-left {
+        border-bottom-left-radius: border-radius("base");
+    }
+
+    &--bottom-right {
+        border-bottom-right-radius: border-radius("base");
+    }
+}
+
+.border-radius--none {
+    border-radius: 0;
+
+    &--top-left {
+        border-top-left-radius: 0;
+    }
+
+    &--top-right {
+        border-top-right-radius: 0;
+    }
+
+    &--bottom-left {
+        border-bottom-left-radius: 0;
+    }
+
+    &--bottom-right {
+        border-bottom-right-radius: 0;
+    }
+}

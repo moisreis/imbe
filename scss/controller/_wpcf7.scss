@@ -1,0 +1,18 @@
+.wpcf7 {
+    min-width: 95vw !important;
+    @include flex-column--center;
+}
+
+.wpcf7-form-control-wrap {
+    @include flex-column--start;
+    gap: spacing("regular");
+    align-items: start;
+}
+
+.wpcf7-response-output, .wpcf7-spinner {
+    display: none !important;
+}
+
+.wpcf7-submit {
+    height: auto;
+}

@@ -1,0 +1,40 @@
+.gallery {
+    @include grid--2;
+    gap: spacing("small");
+    padding: spacing("medium");
+
+    @include media("visible-on-mobile") {
+        padding: spacing("small");
+    }
+
+    &-item {
+        @include flex-column--start;
+        align-items: flex-start;
+        overflow: hidden;
+        gap: spacing("2-extra-small");
+        position: relative;
+
+        & > img {
+            max-height: 100%;
+            width: 100%;
+            aspect-ratio: 1;
+        }
+
+        & > p {
+            font-size: font-size("small");
+            font-weight: font-weight("regular");
+            text-align: start;
+        }
+
+        & > button {
+            opacity: 0;
+            @include is-absolutely-centered;
+        }
+
+        &:hover {
+            & > button {
+                opacity: 1;
+            }
+        }
+    }
+}

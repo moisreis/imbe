@@ -1,0 +1,36 @@
+@mixin border {
+    /* @mixin border */
+    border: 1px solid color("neutral", "border");
+}
+
+@mixin border--x {
+    /* @mixin border--x */
+    // border-left: 1px solid color("neutral", "border");
+    // border-right: 1px solid color("neutral", "border");
+}
+
+@mixin border--y {
+    /* @mixin border--y */
+    // border-top: 1px solid color("neutral", "border");
+    // border-bottom: 1px solid color("neutral", "border");
+}
+
+@mixin border--left {
+    /* @mixin border--left */
+    border-left: 1px solid color("neutral", "border");
+}
+
+@mixin border--right {
+    /* @mixin border--right */
+    border-right: 1px solid color("neutral", "border");
+}
+
+@mixin border--top {
+    /* @mixin border--top */
+    border-top: 1px solid color("neutral", "border");
+}
+
+@mixin border--bottom {
+    /* @mixin border--bottom */
+    border-bottom: 1px solid color("neutral", "border");
+}

@@ -1,0 +1,11 @@
+.loader {
+    background-color: color("neutral", "background");
+    @include flex-row--center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999999;
+}

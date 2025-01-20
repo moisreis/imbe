@@ -1,0 +1,30 @@
+$base: 0.125rem;
+
+$multipliers: (
+    "0": 0,
+    "3-extra-small": 1,
+    "2-extra-small": 2,
+    "extra-small": 4,
+    "small": 6,
+    "regular": 8,
+    "medium": 12,
+    "large": 16,
+    "extra-large": 20,
+    "2-extra-large": 24,
+    "3-extra-large": 28,
+    "4-extra-large": 32,
+    "5-extra-large": 40,
+    "6-extra-large": 48,
+    "7-extra-large": 96,
+    "8-extra-large": 128,
+    "9-extra-large": 148,
+    "10-extra-large": 164,
+    "11-extra-large": 180,
+);
+
+$spacing: map-merge((), $multipliers);
+
+@each $key, $multiplier in $multipliers {
+    $value: $base * $multiplier;
+    $spacing: map-merge($spacing, ($key: $value));
+}

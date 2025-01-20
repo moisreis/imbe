@@ -1,0 +1,8 @@
+nav {
+    @include flex-row--end;
+    gap: spacing("medium");
+
+    @include media("visible-on-mobile") {
+        @include flex-row--center;
+    }
+}

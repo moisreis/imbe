@@ -1,0 +1,15 @@
+@mixin media($query) {
+    @if $query == visible-on-desktop {
+        @media (min-width: 1366px) {
+            /* @mixin media(visible-on-desktop) */
+            @content;
+        }
+    }
+
+    @if $query == visible-on-mobile {
+        @media (max-width: 1366px) {
+            /* @mixin media(visible-on-mobile) */
+            @content;
+        }
+    }
+}

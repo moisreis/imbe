@@ -1,0 +1,9 @@
+/* 
+The `<ul>` under the `.menu` needs to be a row
+*/
+ul.menu {
+    @include flex-row--end;
+    @include media("visible-on-mobile") {
+        @include flex-column--center;
+    }
+}

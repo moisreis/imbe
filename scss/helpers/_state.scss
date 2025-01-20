@@ -1,0 +1,36 @@
+@mixin is-hidden--in-mobile {
+    @include media(visible-on-mobile) {
+        /* @mixin is-hidden--in-mobile */
+        display: none;
+    }
+}
+
+@mixin is-hidden--in-desktop {
+    @include media(visible-on-desktop) {
+        /* @mixin is-hidden--in-desktop */
+        display: none;
+    }
+}
+
+@mixin is-absolutely-centered {
+    /* @mixin is-absolutely-centered */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin is-absolutely-centered--x {
+    /* @mixin is-absolutely-centered--x */
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+@mixin is-absolutely-centered--y {
+    /* @mixin is-absolutely-centered--y */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

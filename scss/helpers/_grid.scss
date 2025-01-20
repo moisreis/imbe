@@ -1,0 +1,119 @@
+@mixin grid--1 {
+    /* @mixin grid--1 */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--2 {
+    /* @mixin grid--2 */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--3 {
+    /* @mixin grid--3 */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--4 {
+    /* @mixin grid--4 */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--5 {
+    /* @mixin grid--5 */
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--6 {
+    /* @mixin grid--6 */
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--7 {
+    /* @mixin grid--7 */
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--8 {
+    /* @mixin grid--8 */
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--9 {
+    /* @mixin grid--9 */
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--10 {
+    /* @mixin grid--10 */
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--11 {
+    /* @mixin grid--11 */
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@mixin grid--12 {
+    /* @mixin grid--12 */
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+    @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

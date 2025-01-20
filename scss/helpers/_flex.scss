@@ -1,0 +1,107 @@
+@mixin flex-row--start {
+    /* @mixin flex-row--start */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-row--center {
+    /* @mixin flex-row--center */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-row--end {
+    /* @mixin flex-row--end */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-row--between {
+    /* @mixin flex-row--between */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-row--around {
+    /* @mixin flex-row--around */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-row--evenly {
+    /* @mixin flex-row--evenly */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--start {
+    /* @mixin flex-column--start */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--center {
+    /* @mixin flex-column--center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--end {
+    /* @mixin flex-column--end */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--between {
+    /* @mixin flex-column--between */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--around {
+    /* @mixin flex-column--around */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin flex-column--evenly {
+    /* @mixin flex-column--evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}

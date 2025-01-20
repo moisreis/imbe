@@ -1,0 +1,10 @@
+main {
+    @include flex-column--start;
+    gap: spacing("large");
+    width: 95vw;
+    margin: auto;
+
+    @include media("visible-on-mobile") {
+        width: 90vw;
+    }
+}

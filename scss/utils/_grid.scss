@@ -1,0 +1,14 @@
+@mixin generate-grid-mixins($max-columns: 16) {
+  @for $i from 1 through $max-columns {
+    .grid--#{$i} {
+      display: grid;
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+
+      @include media("visible-on-mobile") {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+  }
+}
+
+@include generate-grid-mixins(16);

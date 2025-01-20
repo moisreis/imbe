@@ -1,0 +1,36 @@
+.social-proof {
+    @include flex-column--center;
+    gap: spacing("medium");
+    padding: spacing("6-extra-large") 0;
+
+    & > h3,
+    & > p,
+    & > div {
+        text-align: center;
+        width: 40vw;
+        margin: auto;
+
+        @include media("visible-on-mobile") {
+            width: 90%;
+        }
+    }
+
+    &--avatar {
+        width: spacing("6-extra-large");
+        height: spacing("6-extra-large");
+        border-radius: border-radius("full");
+    }
+
+    &--info {
+        @include flex-column--center;
+        gap: spacing("small");
+
+        & > span {
+            font-family: font-family("sans");
+            font-size: font-size("medium");
+            font-weight: font-weight("regular");
+            color: color("text", "muted");
+            text-transform: uppercase;
+        }
+    }
+}

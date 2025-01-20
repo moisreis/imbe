@@ -1,0 +1,33 @@
+@each $key, $value in $spacing {
+  .width--#{$key} {
+    width: $value;
+  }
+}
+
+.width--half {
+  width: 50%;
+
+  @include media("visible-on-mobile") {
+    width: 100%;
+  }
+}
+
+.width--70 {
+  width: 70%;
+
+  @include media("visible-on-mobile") {
+    width: 100%;
+  }
+}
+
+.width--full {
+  width: 100%;
+}
+
+.width--base {
+  width: 95vw;
+
+  @include media("visible-on-mobile") {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,53 @@
+.badge {
+    @include flex-row--center;
+    gap: spacing("small");
+    padding: spacing("small") spacing("regular");
+    height: spacing("large");
+    border-radius: border-radius("full");
+    background-color: transparent;
+    font-size: font-size("small");
+    color: color("text", "foreground");
+    text-transform: uppercase;
+    font-weight: font-weight("medium");
+    font-family: font-family("sans");
+    @include border;
+
+    &--primary {
+        background-color: color("brand", "primary", "main");
+        color: color("brand", "primary", "light");
+        border-color: color("brand", "primary", "main");
+    }
+
+    &--secondary {
+        background-color: color("brand", "secondary", "main");
+        color: color("brand", "secondary", "light");
+        border-color: color("brand", "secondary", "main");
+    }
+
+    &--tertiary {
+        background-color: color("brand", "tertiary", "main");
+        color: color("brand", "tertiary", "light");
+        border-color: color("brand", "tertiary", "main");
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: color("text", "foreground");
+    }
+
+    &--link {
+        background-color: transparent;
+        color: color("brand", "primary", "main");
+        border-color: transparent;
+    }
+
+    &--blur {
+        border: none !important;
+        background-color: transparent;
+        color: color("neutral", "background");
+        backdrop-filter: blur(3px);
+    }
+}
+
+
+    

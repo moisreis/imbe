@@ -1,0 +1,89 @@
+button,
+.button {
+    @include flex-row--center;
+    gap: spacing("small");
+    padding: spacing("regular") spacing("medium");
+    height: spacing("large");
+    border-radius: border-radius("full");
+    background-color: transparent;
+    font-size: font-size("small");
+    color: color("text", "foreground");
+    text-transform: uppercase;
+    font-weight: font-weight("medium");
+    font-family: font-family("sans");
+    cursor: pointer;
+    @include border;
+    @include transition;
+
+    &:hover {
+        @include opacity;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+        @include outline;
+        @include pressed-down;
+    }
+
+    @include media("visible-on-mobile") {
+        width: 100%;
+    }
+}
+
+.button {
+    &--primary {
+        background-color: color("brand", "primary", "main");
+        color: color("brand", "primary", "light");
+        border-color: color("brand", "primary", "main");
+    }
+
+    &--secondary {
+        background-color: color("brand", "secondary", "main");
+        color: color("brand", "secondary", "light");
+        border-color: color("brand", "secondary", "main");
+    }
+
+    &--tertiary {
+        background-color: color("brand", "tertiary", "main");
+        color: color("brand", "tertiary", "light");
+        border-color: color("brand", "tertiary", "main");
+    }
+
+    &--outline {
+        background-color: transparent;
+        color: color("text", "foreground");
+    }
+
+    &--ghost {
+        background-color: transparent;
+        color: color("text", "foreground");
+        border-color: transparent;
+
+        &:hover {
+            background-color: color("brand", "primary", "main");
+
+            & > a {
+                color: color("brand", "primary", "light") !important;
+            }
+        }
+    }
+
+    &--link {
+        background-color: transparent;
+        color: color("brand", "primary", "main");
+        border-color: transparent;
+    }
+
+    &--blur {
+        border: none !important;
+        background-color: transparent;
+        color: color("neutral", "background");
+        backdrop-filter: blur(3px);
+    }
+}
+
+/* Bigger button modifier */
+.is-bigger {
+    padding: spacing("large") spacing("extra-large");
+}

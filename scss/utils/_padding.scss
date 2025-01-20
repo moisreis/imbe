@@ -1,0 +1,31 @@
+@each $key, $value in $spacing {
+  .padding--#{$key} {
+    padding: $value;
+  }
+
+  .padding-left--#{$key} {
+    padding-left: $value;
+  }
+
+  .padding-right--#{$key} {
+    padding-right: $value;
+  }
+
+  .padding-x--#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .padding-y--#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .padding-bottom--#{$key} {
+    padding-bottom: $value !important;
+  }
+
+  .padding-top--#{$key} {
+    padding-top: $value;
+  }
+}

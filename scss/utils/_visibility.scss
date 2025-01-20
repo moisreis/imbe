@@ -1,0 +1,16 @@
+.is-hidden {
+
+    &--on-mobile {
+
+        @include media("visible-on-mobile") {
+            display: none;
+        }
+    }
+
+    &--on-desktop {
+
+        @include media("visible-on-desktop") {
+            display: none;
+        }
+    }
+}

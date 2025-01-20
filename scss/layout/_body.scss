@@ -1,0 +1,8 @@
+body {
+    width: 95vw;
+    margin: auto;
+
+    @include media("visible-on-mobile") {
+        width: 90vw;
+    }
+}

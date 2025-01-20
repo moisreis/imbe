@@ -1,0 +1,10 @@
+.list--grid.has-blog {
+
+    & > .list--grid--item {
+
+        & > img {
+            height: 40vh !important;
+            aspect-ratio: 1/1;
+        }
+    }
+}

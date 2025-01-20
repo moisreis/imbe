@@ -1,0 +1,30 @@
+@function border-radius($key) {
+    @return map-get($border-radius, $key);
+}
+
+@function color($category, $subcategory, $key: null) {
+    @if $key != null {
+        @return map-get(map-get(map-get($color, $category), $subcategory), $key);
+    }
+    @return map-get(map-get($color, $category), $subcategory);
+}
+
+@function font-family($key) {
+    @return map-get($font-family, $key);
+}
+
+@function font-size($key) {
+    @return map-get($font-size, $key);
+}
+
+@function font-weight($key) {
+    @return map-get($font-weight, $key);
+}
+
+@function line-height($key) {
+    @return map-get($line-height, $key);
+}
+
+@function spacing($key) {
+    @return map-get($spacing, $key);
+}

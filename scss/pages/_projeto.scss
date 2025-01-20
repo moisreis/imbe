@@ -1,0 +1,35 @@
+#header,
+#features {
+    @include media("visible-on-mobile") {
+        padding: spacing("large") !important;
+    }
+}
+
+#features {
+    @include media("visible-on-mobile") {
+        gap: spacing("large") !important;
+        @include border--top;
+    }
+}
+#projeto--title,
+#features--list,
+#projeto--text,
+#features--badges {
+    @include media("visible-on-mobile") {
+        border: none !important;
+        padding: 0 !important;
+    }
+}
+
+#projeto--title {
+    @include media("visible-on-mobile") {
+        margin-bottom: spacing("small");
+    }
+}
+
+#projeto--title,
+#features--list {
+    @include media("visible-on-mobile") {
+        align-items: flex-start !important;
+    }
+}

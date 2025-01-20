@@ -1,0 +1,10 @@
+.mobile-menu {
+    position: absolute;
+    height: fit-content;
+    padding: spacing("2-extra-large");
+    width: 100vw;
+    top: 100%;
+    left: 0;
+    @include blur--background;
+    z-index: 999999;
+}
