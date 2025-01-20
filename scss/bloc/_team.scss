@@ -1,9 +1,9 @@
 .team {
     @include flex-column--center;
     gap: spacing("large");
-    background-color: color("neutral", "accent") !important;
     width: 100vw;
     padding: spacing("6-extra-large") 0;
+    background-color: color("neutral", "accent") !important;
 
     &--pictures {
         @include flex-row--center;

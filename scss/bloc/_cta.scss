@@ -31,14 +31,24 @@
             font-weight: font-weight("light") !important;
             color: color("neutral", "background");
             line-height: line-height("title");
-            text-transform: capitalize;
             font-size: font-size("12-extra-large");
             text-align: center;
             line-height: line-height("body");
+            margin-bottom: spacing("medium");
 
             @include media("visible-on-mobile") {
                 font-size: font-size("10-extra-large") !important;
             }
+        }
+
+        & > h2 {
+            font-family: font-family("sans");
+            font-size: font-size("extra-large");
+            font-weight: font-weight("light");
+            color: color("neutral", "background");
+            line-height: line-height("body");
+            text-transform: uppercase;
+            text-align: center;
         }
     }
 

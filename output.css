@@ -2575,16 +2575,25 @@ button:focus, button:focus-visible, button:active,
   font-weight: 300 !important;
   color: rgb(250.6, 247, 244.2);
   line-height: 1.5;
-  text-transform: capitalize;
   font-size: 4.9175rem;
   text-align: center;
   line-height: 1.115;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 1366px) {
   .cta-cta > h1 {
     /* @mixin media(visible-on-mobile) */
     font-size: 3.969125rem !important;
   }
+}
+.cta-cta > h2 {
+  font-family: "Satoshi-Variable";
+  font-size: 1.159125rem;
+  font-weight: 300;
+  color: rgb(250.6, 247, 244.2);
+  line-height: 1.115;
+  text-transform: uppercase;
+  text-align: center;
 }
 .cta-button {
   /* @mixin is-absolutely-centered--x */
@@ -2982,9 +2991,9 @@ button:focus, button:focus-visible, button:active,
   align-items: center;
   align-content: center;
   gap: 2rem;
-  background-color: rgb(242.9752631579, 233.1368421053, 225.4847368421) !important;
   width: 100vw;
   padding: 6rem 0;
+  background-color: rgb(242.9752631579, 233.1368421053, 225.4847368421) !important;
 }
 .team--pictures {
   /* @mixin flex-row--center */
