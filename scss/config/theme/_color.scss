@@ -1,9 +1,11 @@
 @use 'sass:color';
 
+$background: #fefefe;
 $base: #f4ebe4;
 $primary: #9b4b3c;
 $secondary: #394f6b;
 $tertiary: #b8860b;
+$black: #333333;
 
 $color: (
     brand: (
@@ -21,11 +23,11 @@ $color: (
         ),
     ),
     text: (
-        foreground: color.scale($base, $lightness: -90%),
-        muted: color.scale($base, $lightness: -70%),
+        foreground: $black,
+        muted: color.scale($black, $lightness: -70%),
     ),
     neutral: (
-        background: color.scale($base, $lightness: 60%),
+        background: $background,
         border: color.scale($base, $lightness: -7.5%),
         accent: color.scale($base, $lightness: -0.75%),
     )

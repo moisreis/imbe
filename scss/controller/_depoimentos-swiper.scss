@@ -1,0 +1,13 @@
+.depoimentos-swiper {
+    & > .swiper-wrapper {
+        & > .social-proof {
+            & > .paragraph > p {
+                @include media("visible-on-mobile") {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
+

@@ -28,7 +28,15 @@
     font-family: font-family("sans");
     font-size: font-size("extra-large");
     font-weight: font-weight("medium");
-    color: color("text", "muted");
+    color: color("text", "foreground");
+    line-height: line-height("body");
+}
+
+.logo {
+    font-family: font-family("sans");
+    font-size: font-size("extra-large");
+    font-weight: font-weight("medium");
+    color: color("text", "foreground");
     line-height: line-height("body");
     text-transform: capitalize;
 }
@@ -37,7 +45,7 @@
     font-family: font-family("sans");
     font-weight: font-weight("regular");
     font-size: font-size("large");
-    color: color("text", "muted");
+    color: color("text", "foreground");
     line-height: line-height("title");
     text-transform: none;
 }

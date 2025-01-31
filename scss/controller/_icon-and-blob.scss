@@ -1,0 +1,19 @@
+#services-list {
+    // & > .flex-column--center {
+    //     @include media("visible-on-mobile") {
+    //         text-align: left !important;
+    //     }
+    // }
+
+    // & > .align--center {
+    //     @include media("visible-on-mobile") {
+    //         align-items: flex-start !important;
+    //     }
+    // }
+
+    & > .icon-and-blob ~ .text-align--center {
+        @include media("visible-on-mobile") {
+            text-align: center !important;
+        }
+    }
+}

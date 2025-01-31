@@ -67,3 +67,8 @@
 .swiper-pagination-bullet-active {
     background: color("brand", "tertiary", "main") !important;
 }
+
+
+.cta-swiper > .swiper-wrapper {
+    height: 70vh;
+}

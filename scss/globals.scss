@@ -13,6 +13,7 @@
 @import "./helpers/flex";
 @import "./helpers/grid";
 @import "./helpers/media";
+@import "./helpers/pb";
 @import "./helpers/state";
 @import "./helpers/transition";
 
@@ -58,8 +59,10 @@
 @import "./bloc/team";
 
 @import "./controller/card";
+@import "./controller/depoimentos-swiper";
 @import "./controller/list--grid";
 @import "./controller/footer";
+@import "./controller/icon-and-blob";
 @import "./controller/logo";
 @import "./controller/nav";
 @import "./controller/swiper";

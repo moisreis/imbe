@@ -21,12 +21,12 @@ get_header(); ?>
         while ($query->have_posts()) : $query->the_post(); ?>
             <a href="<?php the_permalink(); ?>" class="card">
                 <div class="card--content">
-                    <p class="paragraph"><?php the_title(); ?></p>
                     <p class="paragraph"><?php the_field('localizacao'); ?> | <?php the_field('ano'); ?></p>
+                    <p class="paragraph"><?php the_field('cliente'); ?></p>
                 </div>
                 <div class="card--image">
                     <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-                    <button class="button--blur">Ver <?php the_title(); ?></button>
+                    <button class="button--accent width--fit">Ver <?php the_title(); ?></button>
                 </div>
             </a>
         <?php endwhile;

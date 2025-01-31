@@ -20,6 +20,10 @@
   }
 }
 
+.width--fit {
+  max-width: fit-content !important;
+}
+
 .width--full {
   width: 100%;
 }

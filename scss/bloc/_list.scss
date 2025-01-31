@@ -8,6 +8,10 @@
         & > h2 {
             position: relative;
             z-index: 10;
+
+            @include media("visible-on-mobile") {
+                text-align: center !important;
+            }
         }
 
         &--absolute-background {
@@ -19,6 +23,10 @@
                 color: color("neutral", "accent");
                 user-select: none;
                 pointer-events: none;
+
+                @include media("visible-on-mobile") {
+                    text-align: center !important;
+                }
             }
         }
     }

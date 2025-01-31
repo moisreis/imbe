@@ -27,7 +27,7 @@ button,
     }
 
     @include media("visible-on-mobile") {
-        width: 100%;
+        width: fit-content !important;
     }
 }
 
@@ -36,6 +36,11 @@ button,
         background-color: color("brand", "primary", "main");
         color: color("brand", "primary", "light");
         border-color: color("brand", "primary", "main");
+    }
+
+    &--accent {
+        background-color: color("neutral", "background");
+        color: color("text", "foreground");
     }
 
     &--secondary {
@@ -51,8 +56,8 @@ button,
     }
 
     &--outline {
-        background-color: transparent;
-        color: color("text", "foreground");
+        background-color: color("brand", "primary", "main");
+        color: color("neutral", "background");
     }
 
     &--ghost {
@@ -69,9 +74,15 @@ button,
         }
     }
 
+    &--background {
+        border-color: color("brand", "primary", "main");
+        background-color: color("neutral", "background");
+        color: color("text", "foreground");
+    }
+
     &--link {
         background-color: transparent;
-        color: color("brand", "primary", "main");
+        color: black;
         border-color: transparent;
     }
 
@@ -86,4 +97,8 @@ button,
 /* Bigger button modifier */
 .is-bigger {
     padding: spacing("large") spacing("extra-large");
+}
+
+.has-border {
+    border: 1px solid color("neutral", "background");
 }

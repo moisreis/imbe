@@ -45,6 +45,10 @@ h6 {
   color: color("text", "foreground");
   line-height: line-height("title");
   font-weight: inherit;
+
+  @include media("visible-on-mobile") {
+    text-align: left !important;
+  }
 }
 
 h1 {
@@ -78,6 +82,10 @@ p {
   color: color("text", "muted");
   line-height: line-height("title");
   text-transform: none;
+
+  @include media("visible-on-mobile") {
+    text-align: left !important;
+  }
 }
 
 a {
@@ -93,7 +101,11 @@ a {
 
   @include media("visible-on-mobile") {
     width: 100%;
+  }
 }
+
+.is-centered-a {
+  @include flex-column--center;
 }
 
 ::-webkit-scrollbar {

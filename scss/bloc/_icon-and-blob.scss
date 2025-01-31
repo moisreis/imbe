@@ -34,3 +34,10 @@
         }
     }
 }
+
+.services--content {
+
+    @include media("visible-on-mobile") {
+        text-align: center !important;
+    }
+}

@@ -10,9 +10,9 @@
 get_header(); ?>
 <!-- BELOW IS `/<?php echo get_permalink() ?>` -->
 <main>
-    <section id="header" class="grid--2 width--full padding-x--8-extra-large padding-y--2-extra-large">
+    <!-- <section id="header" class="grid--2 width--full padding-x--8-extra-large padding-y--2-extra-large">
         <div id="projeto--title" class="flex flex-column flex-column--start align--end border--right gap--extra-small width--full padding-right--2-extra-large">
-            <h2 class="title"><?php echo get_the_title() ?></h2>
+            <h2 class="title"><?php // echo get_the_title() ?></h2>
         </div>
         <div id="projeto--text" class="flex flex-row flex-row--start align--center padding-left--2-extra-large flex-wrap gap--small">
             <?php
@@ -33,7 +33,7 @@ get_header(); ?>
             echo $descricao;
             ?>
         </div>
-    </section>
+    </section> -->
     <section id="features" class="grid--2 width--full padding-x--8-extra-large padding-y--2-extra-large">
         <div id="features--list" class="flex flex-column flex-column--end align--end border--right gap--medium width--full padding-right--2-extra-large">
             <div class="flex flex-column flex-column--end align--end">
@@ -102,7 +102,7 @@ get_header(); ?>
             $servicos = get_field('servicos');
             if ($servicos): ?>
                 <?php foreach ($servicos as $servico): ?>
-                    <span class="badge badge--secondary"><?php echo esc_html($servico->name); ?></span>
+                    <span class="badge badge--primary"><?php echo esc_html($servico->name); ?></span>
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
@@ -116,7 +116,6 @@ get_header(); ?>
                 <div class="gallery-item">
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <p><?php echo esc_html($image['caption']); ?></p>
-                    <button class="button--blur">Abrir</button>
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>

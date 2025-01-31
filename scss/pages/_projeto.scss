@@ -8,7 +8,6 @@
 #features {
     @include media("visible-on-mobile") {
         gap: spacing("large") !important;
-        @include border--top;
     }
 }
 #projeto--title,

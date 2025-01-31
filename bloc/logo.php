@@ -18,7 +18,7 @@
     <?php
     } else {
     ?>
-        <h5 class="subtitle" id="logo"><?php echo get_bloginfo('name'); ?></h5>
+        <h5 class="logo" id="logo"><?php echo get_bloginfo('name'); ?></h5>
     <?php
     }
     ?>

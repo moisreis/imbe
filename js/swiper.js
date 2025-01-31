@@ -31,3 +31,20 @@ var swiperDepoimentos = new Swiper(".depoimentos-swiper", {
         }
     }
 });
+
+var swiperCta = new Swiper(".cta-swiper", {
+    autoplay: {
+        delay: 10500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        1280: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        }
+    }
+});
